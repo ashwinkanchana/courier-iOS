@@ -45,8 +45,11 @@ let package = Package(
             dependencies: [],
             path: "Internal/MQTT-Client-Framework/MQTTClientGJ/MQTTClientGJ",
             publicHeadersPath: "",
+            // cSettings: [
+            //     .headerSearchPath("../../../../MQTTClientGJ/Modules/")
+            // ]),
             cSettings: [
-                .headerSearchPath("../../../MQTTClientGJ/Modules/")
+                .headerSearchPath(".")
             ]),
         .target(
             name: "CourierProtobuf",
